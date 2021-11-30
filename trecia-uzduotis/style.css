@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 5rem auto;
+}
+
+section {
+    border: 1px solid rgb(151, 151, 151);
+    padding: 1rem;
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+span, b {
+    color: gray;
+}
+
+section:nth-child(1) {
+    margin-right: 10px;
+}
+
+section:nth-child(1) h1 {
+    color: rgb(15, 170, 170);
+}
+section:nth-child(2) h1 {
+    color: rgb(231, 161, 49);
+}
+
+h1, b, span {
+    margin: 1rem;
+    display: inline-block;
+}
+
+button {
+    padding: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+section:nth-child(1) button {
+    background-color: rgb(15, 170, 170);
+}
+section:nth-child(2) button {
+    background-color: rgb(231, 161, 49);
+}
