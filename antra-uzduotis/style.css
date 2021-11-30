@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(189, 185, 185);
+}
+
+header {
+    background-color: black;
+    color: white;
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+ul {
+    width: 80%;
+    margin: auto;
+}
+
+ul li {
+    display: inline-block;
+    padding: 1rem;
+    border-right: 1px solid white;
+}
+
+section {
+    background-color: white;
+    width: 80%;
+    margin: 10px auto;
+    padding: 1rem;
+}
+
+section:nth-child(3) div {
+    width: 45%;
+    display: inline-block;
+    margin-left: 15px;
+}
