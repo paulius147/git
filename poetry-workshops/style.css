@@ -1,0 +1,87 @@
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid rgb(144, 144, 144);
+}
+
+tr:first-child {
+    border-bottom: 3px solid rgb(9, 116, 158);
+}
+
+th {
+    border-radius: 10px;
+    background-color: rgb(114, 176, 247);
+    color: white;
+    font-weight: normal;
+}
+
+th:nth-child(2), th:nth-child(3) {
+    border-radius: 0;
+}
+
+th, td {
+    padding: 0 15px;
+}
+
+tr:nth-child(even) {
+    background: rgb(227, 254, 255)
+}
+tr:nth-child(odd) {
+    background: rgb(221, 240, 240)
+}
+
+li {
+    list-style: none;
+}
+
+li::before {
+    padding: 1px;
+    content: '+';
+    display: inline-block;
+    background-color: rgb(48, 180, 48);
+    border-radius: 50%;
+    color: white;
+    border: 1px solid black;
+    margin-right: 10px;
+  }
+
+form {
+    position: relative;
+    width: 50%;
+    margin-top: 20px;
+}
+
+form i {
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    left: 30px;
+}
+
+form > div {
+    padding: 15px 10px;
+    border: 1px solid black;
+}
+
+form div div {
+    width: 40%;
+    display: inline-block;
+}
+
+select {
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    border-radius: 10px;
+    margin-top: 10px;
+    right: 0;
+    margin-right: 15px;
+    position: absolute;
+    background-color: rgb(53, 202, 53);
+    color: white;
+}
+
+label[for=center], select {
+    margin: 10px 0;
+    display: inline-block;
+}
