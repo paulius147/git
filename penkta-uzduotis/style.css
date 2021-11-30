@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    background: url('https://wallsdesk.com/wp-content/uploads/2018/03/Pictures-of-Elk.jpg') no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+
+    border: 1px solid blue;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
