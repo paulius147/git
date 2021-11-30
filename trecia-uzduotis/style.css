@@ -7,13 +7,16 @@
 main {
     padding: 1rem;
     max-width: 1000px;
-    margin: 5rem auto;
+    margin: auto;
+    text-align: center;
 }
 
 section {
     border: 1px solid rgb(151, 151, 151);
     padding: 1rem;
-    width: 49%;
+    width: 45%;
+    min-width: 278px;
+    margin: 1rem;
     display: inline-block;
     text-align: center;
 }
@@ -23,10 +26,6 @@ h1 {
 }
 span, b {
     color: gray;
-}
-
-section:nth-child(1) {
-    margin-right: 10px;
 }
 
 section:nth-child(1) h1 {
