@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&family=Roboto&display=swap')
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    line-height: 1
+
+html
+    font-size: 62.5%
+
+// variables
+// width
+$max-w: 1200px
+$bottom-nav-el-w: 280px
+$seperate-w: 60px
+$nav-el-w: 50px
+$learn-more-btn-w: 160px
+$learn-more-btn-h: 40px
+// font
+$kaushan: 'Kaushan Script', cursive
+$montserrat: 'Montserrat', sans-serif
+$roboto: 'Roboto', sans-serif
+// font size
+$font-30: 30px
+$font-14: 14px
+// font color
+$font-white: white
+$font-dark: #333333
+$font-light: #999999
+$font-pink: #f38181
+$nav-link-hover: #fce38a
+
+// header
+header
+    background: url('../images/header-background.jpg')
+    background-position: center
+    background-size: cover
+    height: 100vh
+    .headerContainer
+        position: relative
+        height: 100%
+        max-width: $max-w
+        margin: auto
+        color: $font-white
+        font-family: $montserrat
+        padding-top: 29px
+        nav
+            text-align: justify
+            &::after
+                content: ''
+                display: inline-block
+                width: 100%
+            .list
+                display: inline-block
+            .title
+                display: inline-block
+                h1
+                    font-size: $font-30
+        a
+            color: $font-white
+            text-decoration: none
+            margin-left: 58px
+            font-size: $font-14
+            &:hover
+               color: #fce38a
+               padding-bottom: 0.5rem
+               border-bottom: 1px solid #fce38a
+        img
+            cursor: pointer
+    .headerCenter
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-align: center
+        p
+            font-size: 72px
+            font-family: $kaushan
+            margin-bottom: 6rem
+        h1
+            font-weight: bold
+            font-size: 150px
+        span
+            width: $seperate-w
+            height: 3px
+            display: block
+            background-color: white
+            margin: auto
+            margin-bottom: 5rem
+            margin-top: 5rem
+        button
+            width: $learn-more-btn-w
+            height: $learn-more-btn-h
+            background: transparent
+            border: 3px solid white
+            color: white
+            font-weight: bold
+            font-size: $font-14
+            cursor: pointer
