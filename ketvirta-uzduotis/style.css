@@ -5,14 +5,19 @@
 }
 
 main {
-    max-width: 1100px;
     margin: auto;
+    font-size: 0;
 }
 
 main div {
-    width: 49%;
+    width: 50%;
     display: inline-block;
     vertical-align: middle;
+}
+
+main div:nth-child(1) {
+    width: 50%;
+    height: 100%;
 }
 
 main div:nth-child(2) {

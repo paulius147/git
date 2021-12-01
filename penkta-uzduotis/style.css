@@ -9,8 +9,7 @@ div {
     background-position: center;
     background-size: contain;
     height: 200px;
-
-    border: 1px solid blue;
+    border: 2px solid blue;
     margin: auto;
 }
 
