@@ -15,11 +15,13 @@ html {
 .container {
   max-width: 1200px;
   margin: auto;
-  height: 200px;
+  padding: 5rem 0;
 }
 
 .sectionContainer {
-  margin: 11rem auto;
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+  margin: auto;
   text-align: center;
   max-width: 1200px;
 }
@@ -28,6 +30,10 @@ html {
   font-size: 2.4rem;
   font-family: "Kaushan Script", cursive;
   margin-bottom: 2.4rem;
+}
+
+.sectionContainer span {
+  line-height: 1.5;
 }
 
 .sectionContainer h1 {
@@ -251,15 +257,15 @@ header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
   height: 250px;
 }
 
-.full-width-sec {
+.full-width-counter {
   background-color: #95e1d3;
 }
 
-.full-width-sec .container {
+.full-width-counter .container {
   font-size: 0;
 }
 
-.full-width-sec .container .outer {
+.full-width-counter .container .outer {
   display: inline-block;
   width: 20%;
   text-align: center;
@@ -269,23 +275,23 @@ header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
   height: 100%;
 }
 
-.full-width-sec .container .outer::before {
+.full-width-counter .container .outer::before {
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 25%;
 }
 
-.full-width-sec .container .outer .inner h1 {
+.full-width-counter .container .outer .inner h1 {
   font-size: 7.2rem;
   margin-bottom: 1rem;
 }
 
-.full-width-sec .container .outer .inner p {
+.full-width-counter .container .outer .inner p {
   font-size: 1.4rem;
 }
 
-.full-width-sec .container .last {
+.full-width-counter .container .last {
   border-right: 0;
 }
 
@@ -331,5 +337,201 @@ header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
 
 #services .service-row .service-middle {
   margin: 0 1rem;
+}
+
+#design {
+  background: url("../images/design-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+}
+
+#design .sectionContainer {
+  height: 100%;
+}
+
+#design .sectionContainer img {
+  width: 450px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+#design .sectionContainer .mobile {
+  width: 300px;
+  left: 63%;
+  bottom: -11rem;
+}
+
+#service .sectionContainer div {
+  font-size: 0;
+}
+
+#service .sectionContainer div .service-img {
+  display: inline-block;
+  width: 47%;
+  margin-right: 3%;
+}
+
+#service .sectionContainer div .details-container {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+#service .sectionContainer div .details-container details {
+  border: 1px solid #999999;
+  margin-bottom: 1rem;
+}
+
+#service .sectionContainer div .details-container details .faq-line {
+  background: #999999;
+  width: 100%;
+  height: 1px;
+  display: block;
+}
+
+#service .sectionContainer div .details-container details .faq-content {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow: scroll;
+  max-height: 100px;
+  overflow-x: auto;
+}
+
+#service .sectionContainer div .details-container details summary {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+}
+
+#service .sectionContainer div .details-container details summary .summary-icon {
+  width: 25px;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+#service .sectionContainer div .details-container details summary span {
+  vertical-align: middle;
+}
+
+#service .sectionContainer div .details-container details i {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  display: inline-block;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.full-width-comments {
+  background: #f8f8f8;
+}
+
+.full-width-comments .container {
+  font-size: 0;
+}
+
+.full-width-comments .container::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.full-width-comments .container div {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 5%;
+}
+
+.full-width-comments .container div::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.full-width-comments .container .comment-content {
+  width: 90%;
+}
+
+.full-width-comments .container .comment-content .comment-text {
+  width: 70%;
+  text-align: left;
+}
+
+.full-width-comments .container .comment-content .comment-text .comment {
+  font-size: 2.4rem;
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+}
+
+.full-width-comments .container .comment-content .comment-text .author-container {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.full-width-comments .container .comment-content .comment-text .author-container .author {
+  font-size: 2.4rem;
+  display: inline-block;
+  font-family: "Kaushan Script", cursive;
+  vertical-align: middle;
+}
+
+.full-width-comments .container .comment-content .comment-text .author-container .author-line {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.full-width-comments .container .comment-content .comment-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3rem;
+}
+
+#work .desc {
+  margin: 0;
+}
+
+details > summary::after {
+  position: absolute;
+  content: '+';
+  right: 20px;
+}
+
+details[open] > summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #d4d4d4;
+          box-shadow: inset 0 0 5px #d4d4d4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #95e1d3;
 }
 /*# sourceMappingURL=style.css.map */

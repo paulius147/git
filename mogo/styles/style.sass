@@ -43,16 +43,20 @@ $img-hover-c: #f38181
 .container
     max-width: $max-w
     margin: auto
-    height: 200px
+    padding: 5rem 0
 
 .sectionContainer
-    margin: 11rem auto
+    padding-top: 11rem
+    padding-bottom: 11rem
+    margin: auto
     text-align: center
     max-width: $max-w
     p
         font-size: $font-24
         font-family: $kaushan
         margin-bottom: 2.4rem
+    span
+        line-height: 1.5
     h1
         font-size: $font-30
         font-family: $montserrat
@@ -212,7 +216,7 @@ header
             height: 250px
 
 // full width section
-.full-width-sec
+.full-width-counter
     background-color: $img-shadow-c
     .container
         font-size: 0
@@ -267,3 +271,148 @@ header
                     line-height: 1.5
         .service-middle
             margin: 0 1rem
+
+#design
+    background: url('../images/design-bg.jpg')
+    background-position: center
+    background-size: cover
+    position: relative
+    height: 90vh
+    // overflow: hidden
+    .sectionContainer
+        height: 100%
+        img
+            width: 450px
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translate(-50%, 0)
+        .mobile
+            width: 300px
+            left: 63%
+            bottom: -11rem
+
+// service
+#service
+    .sectionContainer
+        div
+            font-size: 0
+            .service-img
+                display: inline-block
+                width: 47%
+                margin-right: 3%
+            .details-container
+                display: inline-block
+                width: 50%
+                vertical-align: top
+                details
+                    border: 1px solid #999999
+                    margin-bottom: 1rem
+                    .faq-line
+                        background: #999999
+                        width: 100%
+                        height: 1px
+                        display: block
+                    .faq-content
+                        padding: 1rem
+                        margin-top: 1rem
+                        margin-bottom: 1rem
+                        overflow: scroll
+                        max-height: 100px
+                        overflow-x: auto
+                    summary
+                        font-size: $font-14
+                        font-family: $montserrat
+                        padding: 1rem
+                        text-align: left
+                        cursor: pointer
+                        position: relative
+                        list-style: none
+                        .summary-icon
+                            width: 25px
+                            vertical-align: middle
+                            margin-right: 1rem
+                        span
+                            vertical-align: middle
+                    i
+                        font-size: $font-15
+                        font-family: $roboto
+                        color: #999999
+                        display: inline-block
+                        text-align: left
+                        line-height: 1.5
+
+// comments
+.full-width-comments
+    background: #f8f8f8
+    .container
+        font-size: 0
+        &::before
+            content: ""
+            display: inline-block
+            vertical-align: middle
+            height: 100%
+        div
+            display: inline-block
+            vertical-align: middle
+            text-align: center
+            width: 5%
+            &::before
+                content: ""
+                display: inline-block
+                vertical-align: middle
+                height: 100%
+        .comment-content
+            width: 90%
+            .comment-text
+                width: 70%
+                text-align: left
+                .comment
+                    font-size: $font-24
+                    color: $font-light
+                    font-family: $roboto
+                .author-container
+                    display: block
+                    width: 100%
+                    text-align: left
+                    margin-top: 2rem
+                    .author
+                        font-size: $font-24
+                        display: inline-block
+                        font-family: $kaushan
+                        vertical-align: middle
+                    .author-line
+                        display: inline-block
+                        margin-right: 2rem
+            .comment-icon
+                display: inline-block
+                vertical-align: middle
+                margin-right: 3rem
+
+// work
+#work
+    .desc
+        margin: 0
+
+details > summary::after 
+  position: absolute
+  content: '+'
+  right: 20px
+
+details[open] > summary::after 
+  position: absolute
+  content: "-"
+  right: 20px
+
+details > summary::-webkit-details-marker 
+  display: none
+
+::-webkit-scrollbar
+    width: 5px
+
+::-webkit-scrollbar-track 
+  box-shadow: inset 0 0 5px #d4d4d4
+  border-radius: 10px
+
+::-webkit-scrollbar-thumb 
+  background: #95e1d3
