@@ -9,6 +9,48 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  height: 200px;
+}
+
+.sectionContainer {
+  margin: 11rem auto;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.sectionContainer p {
+  font-size: 2.4rem;
+  font-family: "Kaushan Script", cursive;
+  margin-bottom: 2.4rem;
+}
+
+.sectionContainer h1 {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sectionContainer .desc {
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10rem;
+  display: block;
+}
+
+.seperate-span {
+  width: 60px;
+  height: 3px;
+  display: block;
+  background-color: #f38181;
+  margin: auto;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
 header {
@@ -47,14 +89,14 @@ header .headerContainer nav .title {
 }
 
 header .headerContainer nav .title h1 {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 header .headerContainer a {
   color: white;
   text-decoration: none;
   margin-left: 58px;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 header .headerContainer a:hover {
@@ -76,6 +118,10 @@ header .headerContainer .headerCenter {
   text-align: center;
 }
 
+header .headerContainer .headerCenter span {
+  background: white;
+}
+
 header .headerContainer .headerCenter p {
   font-size: 72px;
   font-family: "Kaushan Script", cursive;
@@ -87,16 +133,6 @@ header .headerContainer .headerCenter h1 {
   font-size: 150px;
 }
 
-header .headerContainer .headerCenter span {
-  width: 60px;
-  height: 3px;
-  display: block;
-  background-color: white;
-  margin: auto;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
-}
-
 header .headerContainer .headerCenter button {
   width: 160px;
   height: 40px;
@@ -104,7 +140,7 @@ header .headerContainer .headerCenter button {
   border: 3px solid white;
   color: white;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 
@@ -123,6 +159,7 @@ header .headerContainer .headerBottom div {
   display: inline-block;
   width: 25%;
   font-size: 18px;
+  cursor: pointer;
 }
 
 header .headerContainer .headerBottom div b {
@@ -153,5 +190,146 @@ header .headerContainer .headerBottom div .hoverContainer .span-hover {
 
 header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
   width: 7rem;
+}
+
+#about .about-img .image {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#about .about-img .image:hover {
+  -webkit-box-shadow: 0px 0px 0px 200px rgba(243, 129, 129, 0.7) inset, 10px 10px 0px 0px #95e1d3;
+          box-shadow: 0px 0px 0px 200px rgba(243, 129, 129, 0.7) inset, 10px 10px 0px 0px #95e1d3;
+}
+
+#about .about-img .image:hover .img-hover-span {
+  opacity: 1;
+}
+
+#about .about-img .image .img-hover-span {
+  position: absolute;
+  color: white;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+#about .about-img .image .img-hover-span span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+#about .about-img .img-1 {
+  background: url("../images/about-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 31%;
+  height: 250px;
+}
+
+#about .about-img .img-2 {
+  background: url("../images/about-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 31%;
+  height: 250px;
+  margin: 0 3rem;
+}
+
+#about .about-img .img-3 {
+  background: url("../images/about-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 31%;
+  height: 250px;
+}
+
+.full-width-sec {
+  background-color: #95e1d3;
+}
+
+.full-width-sec .container {
+  font-size: 0;
+}
+
+.full-width-sec .container .outer {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  border-right: 1px solid #e4e4e4;
+  height: 100%;
+}
+
+.full-width-sec .container .outer::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 25%;
+}
+
+.full-width-sec .container .outer .inner h1 {
+  font-size: 7.2rem;
+  margin-bottom: 1rem;
+}
+
+.full-width-sec .container .outer .inner p {
+  font-size: 1.4rem;
+}
+
+.full-width-sec .container .last {
+  border-right: 0;
+}
+
+#services .bottom-row {
+  border-top: 1px solid #999999;
+  padding-top: 3rem;
+}
+
+#services .service-row {
+  font-size: 0;
+}
+
+#services .service-row .service {
+  display: inline-block;
+  width: 32%;
+}
+
+#services .service-row .service img {
+  display: inline-block;
+  vertical-align: top;
+  width: 7%;
+  margin-right: 5%;
+}
+
+#services .service-row .service div {
+  display: inline-block;
+  width: 88%;
+  text-align: left;
+}
+
+#services .service-row .service div h1 {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+}
+
+#services .service-row .service div p {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  line-height: 1.5;
+}
+
+#services .service-row .service-middle {
+  margin: 0 1rem;
 }
 /*# sourceMappingURL=style.css.map */
