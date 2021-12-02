@@ -60,14 +60,14 @@ header .headerContainer a {
 header .headerContainer a:hover {
   color: #fce38a;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #fce38a;
+  border-bottom: 3px solid #fce38a;
 }
 
 header .headerContainer img {
   cursor: pointer;
 }
 
-header .headerCenter {
+header .headerContainer .headerCenter {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -76,18 +76,18 @@ header .headerCenter {
   text-align: center;
 }
 
-header .headerCenter p {
+header .headerContainer .headerCenter p {
   font-size: 72px;
   font-family: "Kaushan Script", cursive;
   margin-bottom: 6rem;
 }
 
-header .headerCenter h1 {
+header .headerContainer .headerCenter h1 {
   font-weight: bold;
   font-size: 150px;
 }
 
-header .headerCenter span {
+header .headerContainer .headerCenter span {
   width: 60px;
   height: 3px;
   display: block;
@@ -97,7 +97,7 @@ header .headerCenter span {
   margin-top: 5rem;
 }
 
-header .headerCenter button {
+header .headerContainer .headerCenter button {
   width: 160px;
   height: 40px;
   background: transparent;
@@ -106,5 +106,52 @@ header .headerCenter button {
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
+}
+
+header .headerContainer .headerBottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-bottom: 2.8rem;
+  font-size: 0;
+}
+
+header .headerContainer .headerBottom div {
+  display: inline-block;
+  width: 25%;
+  font-size: 18px;
+}
+
+header .headerContainer .headerBottom div b {
+  font-size: 24px;
+}
+
+header .headerContainer .headerBottom div .hoverContainer {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+header .headerContainer .headerBottom div .hoverContainer .bottom-nav-el {
+  display: block;
+  width: 280px;
+  height: 0.3rem;
+  background: #e6e6e6;
+}
+
+header .headerContainer .headerBottom div .hoverContainer .span-hover {
+  background: #f38181;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
+  width: 7rem;
 }
 /*# sourceMappingURL=style.css.map */
