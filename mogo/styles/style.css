@@ -198,22 +198,22 @@ header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
   width: 7rem;
 }
 
-#about .about-img .image {
+.hover-pics-sec .hover-img .image {
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
 
-#about .about-img .image:hover {
-  -webkit-box-shadow: 0px 0px 0px 200px rgba(243, 129, 129, 0.7) inset, 10px 10px 0px 0px #95e1d3;
-          box-shadow: 0px 0px 0px 200px rgba(243, 129, 129, 0.7) inset, 10px 10px 0px 0px #95e1d3;
+.hover-pics-sec .hover-img .image:hover {
+  -webkit-box-shadow: 0px 0px 400px 200px rgba(243, 129, 129, 0.7) inset, 10px 10px 0px 0px #95e1d3;
+          box-shadow: 0px 0px 400px 200px rgba(243, 129, 129, 0.7) inset, 10px 10px 0px 0px #95e1d3;
 }
 
-#about .about-img .image:hover .img-hover-span {
+.hover-pics-sec .hover-img .image:hover .img-hover-span {
   opacity: 1;
 }
 
-#about .about-img .image .img-hover-span {
+.hover-pics-sec .hover-img .image .img-hover-span {
   position: absolute;
   color: white;
   top: 50%;
@@ -224,7 +224,7 @@ header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
   transition: opacity 0.5s ease;
 }
 
-#about .about-img .image .img-hover-span span {
+.hover-pics-sec .hover-img .image .img-hover-span span {
   display: block;
   margin-top: 1rem;
   font-size: 1.8rem;
@@ -232,7 +232,7 @@ header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
   font-family: "Montserrat", sans-serif;
 }
 
-#about .about-img .img-1 {
+.hover-pics-sec .hover-img .img-about-1 {
   background: url("../images/about-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -240,7 +240,7 @@ header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
   height: 250px;
 }
 
-#about .about-img .img-2 {
+.hover-pics-sec .hover-img .img-about-2 {
   background: url("../images/about-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -249,7 +249,7 @@ header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
   margin: 0 3rem;
 }
 
-#about .about-img .img-3 {
+.hover-pics-sec .hover-img .img-about-3 {
   background: url("../images/about-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -295,47 +295,47 @@ header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
   border-right: 0;
 }
 
-#services .bottom-row {
+.full-width-content .bottom-row {
   border-top: 1px solid #999999;
   padding-top: 3rem;
 }
 
-#services .service-row {
+.full-width-content .content-row {
   font-size: 0;
 }
 
-#services .service-row .service {
+.full-width-content .content-row .content {
   display: inline-block;
   width: 32%;
 }
 
-#services .service-row .service img {
+.full-width-content .content-row .content img {
   display: inline-block;
   vertical-align: top;
   width: 7%;
   margin-right: 5%;
 }
 
-#services .service-row .service div {
+.full-width-content .content-row .content div {
   display: inline-block;
   width: 88%;
   text-align: left;
 }
 
-#services .service-row .service div h1 {
+.full-width-content .content-row .content div h1 {
   font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 1rem;
 }
 
-#services .service-row .service div p {
+.full-width-content .content-row .content div p {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   color: #999999;
   line-height: 1.5;
 }
 
-#services .service-row .service-middle {
+.full-width-content .content-row .content-middle {
   margin: 0 1rem;
 }
 
@@ -501,8 +501,492 @@ header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
   margin-right: 3rem;
 }
 
+.comment-pic {
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#team .image {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#team .image:hover {
+  -webkit-box-shadow: 0px 0px 400px 200px rgba(243, 129, 129, 0.7) inset, 10px 10px 0px 0px #95e1d3;
+          box-shadow: 0px 0px 400px 200px rgba(243, 129, 129, 0.7) inset, 10px 10px 0px 0px #95e1d3;
+}
+
+#team .image:hover .img-hover-div {
+  opacity: 1;
+}
+
+#team .image .img-hover-div {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  font-size: 0;
+  width: 100%;
+}
+
+#team .image .img-hover-div a {
+  color: white;
+}
+
+#team .image .img-hover-div a i {
+  background: #fce38a;
+  font-size: 2.5rem;
+  padding: 1rem;
+  width: 50px;
+  border-right: 1px solid #f38181;
+}
+
+#team .image .img-hover-div a i:hover {
+  background: #f38181;
+}
+
+#team .image .team-desc {
+  position: absolute;
+  bottom: -10rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#team .image .team-desc b {
+  display: block;
+  margin-bottom: 2rem;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+
+#team .image .team-desc i {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #999999;
+}
+
+#team .img-team-1 {
+  background: url("../images/team-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 31%;
+  height: 470px;
+}
+
+#team .img-team-2 {
+  background: url("../images/team-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 31%;
+  height: 470px;
+  margin: 0 3rem;
+}
+
+#team .img-team-3 {
+  background: url("../images/team-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 31%;
+  height: 470px;
+}
+
+.full-width-logos {
+  margin-top: 7rem;
+  background: #f8f8f8;
+}
+
+.full-width-work {
+  font-size: 0;
+}
+
+.full-width-work .two-img, .full-width-work .one-img {
+  width: 25%;
+  display: inline-block;
+}
+
+.full-width-work .two-img .image, .full-width-work .one-img .image {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.full-width-work .two-img .image:hover, .full-width-work .one-img .image:hover {
+  -webkit-box-shadow: 0px 0px 400px 200px rgba(243, 129, 129, 0.7) inset;
+          box-shadow: 0px 0px 400px 200px rgba(243, 129, 129, 0.7) inset;
+}
+
+.full-width-work .two-img .image:hover .inner-hover, .full-width-work .one-img .image:hover .inner-hover {
+  opacity: 1;
+}
+
+.full-width-work .two-img .image .inner-hover, .full-width-work .one-img .image .inner-hover {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  text-align: center;
+}
+
+.full-width-work .two-img .image .inner-hover span, .full-width-work .one-img .image .inner-hover span {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin: 2rem;
+}
+
+.full-width-work .two-img .image .inner-hover .design-desc, .full-width-work .one-img .image .inner-hover .design-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  display: block;
+}
+
+.full-width-work .two-img .image .inner-hover i, .full-width-work .one-img .image .inner-hover i {
+  font-size: 3rem;
+}
+
+.full-width-work .two-img .design-img-1, .full-width-work .one-img .design-img-1 {
+  background: url("../images/work-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 370px;
+  width: 100%;
+}
+
+.full-width-work .two-img .design-img-5, .full-width-work .one-img .design-img-5 {
+  background: url("../images/work-5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 370px;
+  width: 100%;
+}
+
+.full-width-work .two-img .design-img-2, .full-width-work .one-img .design-img-2 {
+  background: url("../images/work-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 370px;
+  width: 100%;
+}
+
+.full-width-work .two-img .design-img-6, .full-width-work .one-img .design-img-6 {
+  background: url("../images/work-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 370px;
+  width: 100%;
+}
+
+.full-width-work .two-img .design-img-4, .full-width-work .one-img .design-img-4 {
+  background: url("../images/work-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 370px;
+  width: 100%;
+}
+
+.full-width-work .two-img .design-img-7, .full-width-work .one-img .design-img-7 {
+  background: url("../images/work-7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 370px;
+  width: 100%;
+}
+
+.full-width-work .one-img {
+  width: 25%;
+  display: inline-block;
+}
+
+.full-width-work .one-img .design-img-3 {
+  background: url("../images/work-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 740px;
+  width: 100%;
+}
+
+.full-width-work .one-img img {
+  width: 100%;
+  max-height: 770px;
+}
+
+#people {
+  background: url("../images/people-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#people .sectionContainer .bottom-row {
+  border-top: 0;
+}
+
+#people .sectionContainer .content-row .content {
+  vertical-align: top;
+  width: 50%;
+}
+
+#people .sectionContainer .content-row .content div {
+  width: 70%;
+}
+
+#people .sectionContainer .content-row .content div .seperate-span {
+  margin: 1.5rem 0;
+}
+
+#people .sectionContainer .content-row .content div i {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
+#people .sectionContainer .content-row .content img {
+  width: 20%;
+  margin: 0;
+  margin-right: 5%;
+}
+
 #work .desc {
   margin: 0;
+}
+
+#blog .blogs .blog-container {
+  display: inline-block;
+  width: 33%;
+  text-align: left;
+  position: relative;
+}
+
+#blog .blogs .blog-container .image-container .date {
+  position: absolute;
+  bottom: 10rem;
+  left: -1rem;
+  padding: 1.5rem;
+  background: #95e1d3;
+  color: white;
+  text-align: center;
+}
+
+#blog .blogs .blog-container .image-container .date b {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+#blog .blogs .blog-container .image-container .date i {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+#blog .blogs .blog-container .blog-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #333333;
+  margin: 1rem 0;
+  display: block;
+}
+
+#blog .blogs .blog-container p {
+  color: #999999;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#map {
+  background: url("../images/people-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#map .sectionContainer h1 {
+  color: #f38181;
+  margin-top: 1rem;
+}
+
+#map .sectionContainer .seperate-span {
+  margin: 2rem auto 0 auto;
+}
+
+footer .sectionContainer {
+  position: relative;
+}
+
+footer .sectionContainer .footer-left, footer .sectionContainer .footer-middle, footer .sectionContainer .footer-right {
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+}
+
+footer .sectionContainer .footer-left {
+  width: 40%;
+}
+
+footer .sectionContainer .footer-left h1 {
+  font-size: 46px;
+  font-family: "Montserrat", sans-serif;
+  color: #cccccc;
+  margin-bottom: 4rem;
+}
+
+footer .sectionContainer .footer-left .footer-desc {
+  font-size: 1.5rem;
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+}
+
+footer .sectionContainer .footer-left .followers {
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  color: #333333;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #999999;
+}
+
+footer .sectionContainer .footer-left .followers b {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}
+
+footer .sectionContainer .footer-left .follow-us {
+  margin-bottom: 2rem;
+}
+
+footer .sectionContainer .footer-left .follow-us .follow-text {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+}
+
+footer .sectionContainer .footer-left .follow-us .fab {
+  margin: 0 0.5rem;
+  font-size: 1.8rem;
+  color: #95e1d3;
+}
+
+footer .sectionContainer .footer-left form {
+  font-size: 0;
+}
+
+footer .sectionContainer .footer-left form input {
+  padding: 1rem;
+}
+
+footer .sectionContainer .footer-left form input[type='submit'] {
+  font-weight: bold;
+  color: white;
+  background: #95e1d3;
+  border: 3px solid #95e1d3;
+}
+
+footer .sectionContainer .footer-left form input[type='text'] {
+  font-style: italic;
+  border: 1px solid #999999;
+  border-right: 0;
+}
+
+footer .sectionContainer .footer-middle {
+  width: 30%;
+  margin: 0 3rem;
+}
+
+footer .sectionContainer .footer-middle .footer-title {
+  font-size: 1.4rem;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 4.5rem;
+  display: block;
+}
+
+footer .sectionContainer .footer-middle .blog img {
+  display: inline-block;
+}
+
+footer .sectionContainer .footer-middle .blog div {
+  vertical-align: top;
+  display: inline-block;
+  width: 60%;
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+footer .sectionContainer .footer-middle .blog div span {
+  display: block;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+
+footer .sectionContainer .footer-middle .blog div i {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+}
+
+footer .sectionContainer .footer-middle .middle-blog {
+  margin: 2rem 0;
+}
+
+footer .sectionContainer .footer-right {
+  font-size: 0;
+  width: 24%;
+}
+
+footer .sectionContainer .footer-right .footer-title {
+  font-size: 1.4rem;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 4.5rem;
+  display: block;
+}
+
+footer .sectionContainer .footer-right i {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  margin-top: 1rem;
+  display: block;
+}
+
+footer .sectionContainer .footer-bottom {
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #999999;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer .sectionContainer .footer-bottom span {
+  color: #f38181;
 }
 
 details > summary::after {
