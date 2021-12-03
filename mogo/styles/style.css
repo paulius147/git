@@ -10,6 +10,11 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
 }
 
 .container {
@@ -19,6 +24,8 @@ html {
 }
 
 .sectionContainer {
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 11rem;
   padding-bottom: 11rem;
   margin: auto;
@@ -50,7 +57,7 @@ html {
 }
 
 .seperate-span {
-  width: 60px;
+  width: 6rem;
   height: 3px;
   display: block;
   background-color: #f38181;
@@ -73,6 +80,7 @@ header .headerContainer {
   margin: auto;
   color: white;
   font-family: "Montserrat", sans-serif;
+  padding: 0 1rem;
   padding-top: 29px;
 }
 
@@ -129,19 +137,19 @@ header .headerContainer .headerCenter span {
 }
 
 header .headerContainer .headerCenter p {
-  font-size: 72px;
+  font-size: 5.732484076433121vw;
   font-family: "Kaushan Script", cursive;
   margin-bottom: 6rem;
 }
 
 header .headerContainer .headerCenter h1 {
   font-weight: bold;
-  font-size: 150px;
+  font-size: 7.8125vw;
 }
 
 header .headerContainer .headerCenter button {
-  width: 160px;
-  height: 40px;
+  width: 16rem;
+  height: 4rem;
   background: transparent;
   border: 3px solid white;
   color: white;
@@ -159,42 +167,48 @@ header .headerContainer .headerBottom {
           transform: translate(-50%, -50%);
   margin-bottom: 2.8rem;
   font-size: 0;
+  padding: 0 1rem;
 }
 
-header .headerContainer .headerBottom div {
+header .headerContainer .headerBottom .outer-c {
   display: inline-block;
-  width: 25%;
+  width: 23%;
   font-size: 18px;
   cursor: pointer;
+  margin-right: 1.2vw;
+  border-top: 3px solid white;
 }
 
-header .headerContainer .headerBottom div b {
+header .headerContainer .headerBottom .outer-c b {
   font-size: 24px;
 }
 
-header .headerContainer .headerBottom div .hoverContainer {
+header .headerContainer .headerBottom .outer-c .hoverContainer {
   width: 100%;
   margin-bottom: 2.5rem;
+  position: relative;
 }
 
-header .headerContainer .headerBottom div .hoverContainer .bottom-nav-el {
+header .headerContainer .headerBottom .outer-c .hoverContainer .bottom-nav-el {
+  margin: auto;
   display: block;
-  width: 280px;
+  width: 14.58333vw;
   height: 0.3rem;
   background: #e6e6e6;
 }
 
-header .headerContainer .headerBottom div .hoverContainer .span-hover {
+header .headerContainer .headerBottom .outer-c .hoverContainer .span-hover {
   background: #f38181;
   height: 3px;
   position: absolute;
-  top: 0;
+  left: 0;
+  top: -3px;
   width: 0;
   -webkit-transition: width 0.5s ease;
   transition: width 0.5s ease;
 }
 
-header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
+header .headerContainer .headerBottom .outer-c:hover .hoverContainer .span-hover {
   width: 7rem;
 }
 
@@ -262,10 +276,12 @@ header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
 }
 
 .full-width-counter .container {
+  padding: 0;
   font-size: 0;
 }
 
 .full-width-counter .container .outer {
+  padding: 5rem 0;
   display: inline-block;
   width: 20%;
   text-align: center;
@@ -283,7 +299,7 @@ header .headerContainer .headerBottom div:hover .hoverContainer .span-hover {
 }
 
 .full-width-counter .container .outer .inner h1 {
-  font-size: 7.2rem;
+  font-size: 4.474829086389062vw;
   margin-bottom: 1rem;
 }
 
